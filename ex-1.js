@@ -373,4 +373,11 @@ const bills = [
   },
 ];
 
+
 // Start coding here
+
+const newbills = bills.reduce((acc,curr) => {
+  return acc + curr.total 
+},0);
+
+console.log(newbills)
